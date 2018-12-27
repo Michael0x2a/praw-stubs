@@ -62,7 +62,6 @@ Modules that need annotations:
 - [ ] `praw.models.reddit.subreddit`
 - [ ] `praw.models.reddit.widgets`
 - [ ] `praw.models.reddit.wikipage`
-- [ ] `praw.models.reddit.mixins
 - [x] `praw.models.reddit.mixins.__init__`
 - [x] `praw.models.reddit.mixins.editable`
 - [x] `praw.models.reddit.mixins.gildable`
