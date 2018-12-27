@@ -1,0 +1,6 @@
+from ....const import API_PATH
+from typing import Optional
+
+class SavableMixin:
+    def save(self, category: Optional[str] = ...) -> None: ...
+    def unsave(self) -> None: ...
