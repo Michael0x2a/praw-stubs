@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "praw-stubs"
+version = "0.1.0"
+description = "PEP 484 type stubs for the 'praw' library"
+authors = ["Michael Lee <michael.lee.0x2a@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "~2.7 || ^3.4"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.6"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
