@@ -17,4 +17,12 @@ class ThingModerationMixin:
     def undistinguish(self) -> None: ...
     def unignore_reports(self) -> None: ...
 
-class UserContentMixin(EditableMixin, GildableMixin, InboxToggleableMixin, ReplyableMixin, ReportableMixin, SavableMixin, VotableMixin): ...
+class UserContentMixin(
+    EditableMixin,
+    GildableMixin,
+    InboxToggleableMixin,
+    ReplyableMixin,
+    ReportableMixin,
+    SavableMixin,
+    VotableMixin,
+): ...

@@ -5,7 +5,6 @@ from ..generator import ListingGenerator
 from typing import Optional, Dict
 
 class SubmissionListingMixin(PRAWBase):
-    def duplicates(self, limit: int = ...,
-                         params: Optional[Dict[str, str]] = ...,
-                         ) -> ListingGenerator[Submission]: ...
-
+    def duplicates(
+        self, limit: int = ..., params: Optional[Dict[str, str]] = ...
+    ) -> ListingGenerator[Submission]: ...

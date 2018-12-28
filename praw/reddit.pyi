@@ -28,27 +28,41 @@ class Reddit:
     subreddit: SubredditHelper = ...
     subreddits: Any = ...
     user: Any = ...
-    def __init__(self,
-                 site_name: Optional[str] = ...,
-                 requestor_class: Optional[Any] = ...,
-                 requestor_kwargs: Optional[Dict[str, Any]] = ...,
-                 client_id: Optional[str] = ...,
-                 client_secret: Optional[str] = ...,
-                 oauth_url: Optional[str] = ...,
-                 reddit_url: Optional[str] = ...,
-                 refresh_token: Optional[str] = ...,
-                 redirect_uri: Optional[str] = ...,
-                 password: Optional[str] = ...,
-                 user_agent: Optional[str] = ...,
-                 username: Optional[str] = ...,
-                 ) -> None: ...
+    def __init__(
+        self,
+        site_name: Optional[str] = ...,
+        requestor_class: Optional[Any] = ...,
+        requestor_kwargs: Optional[Dict[str, Any]] = ...,
+        client_id: Optional[str] = ...,
+        client_secret: Optional[str] = ...,
+        oauth_url: Optional[str] = ...,
+        reddit_url: Optional[str] = ...,
+        refresh_token: Optional[str] = ...,
+        redirect_uri: Optional[str] = ...,
+        password: Optional[str] = ...,
+        user_agent: Optional[str] = ...,
+        username: Optional[str] = ...,
+    ) -> None: ...
     def comment(self, id: Optional[Any] = ..., url: Optional[Any] = ...): ...
     def domain(self, domain: Any): ...
     def get(self, path: Any, params: Optional[Any] = ...): ...
     def info(self, fullnames: Optional[Any] = ..., url: Optional[Any] = ...): ...
     def patch(self, path: Any, data: Optional[Any] = ...): ...
-    def post(self, path: Any, data: Optional[Any] = ..., files: Optional[Any] = ..., params: Optional[Any] = ...): ...
+    def post(
+        self,
+        path: Any,
+        data: Optional[Any] = ...,
+        files: Optional[Any] = ...,
+        params: Optional[Any] = ...,
+    ): ...
     def random_subreddit(self, nsfw: bool = ...): ...
     def redditor(self, name: Any): ...
-    def request(self, method: Any, path: Any, params: Optional[Any] = ..., data: Optional[Any] = ..., files: Optional[Any] = ...): ...
+    def request(
+        self,
+        method: Any,
+        path: Any,
+        params: Optional[Any] = ...,
+        data: Optional[Any] = ...,
+        files: Optional[Any] = ...,
+    ): ...
     def submission(self, id: Optional[Any] = ..., url: Optional[Any] = ...): ...

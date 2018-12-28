@@ -1,7 +1,7 @@
 from typing import TypeVar, Type, Dict, Optional
 from ..reddit import Reddit
 
-_T = TypeVar('_T')
+_T = TypeVar("_T")
 
 class PRAWBase:
     @classmethod

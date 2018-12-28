@@ -11,7 +11,6 @@ class Config:
     CONFIG: Any = ...
     CONFIG_NOT_SET: _NotSet = ...
     LOCK: Lock = ...
-
     @property
     def short_url(self) -> str: ...
     custom: Dict[str, object] = ...
@@ -24,17 +23,16 @@ class Config:
     password: Optional[str] = ...
     user_agent: Optional[str] = ...
     username: Optional[str] = ...
-    
-
-    def __init__(self,
-                 site_name: str, 
-                 client_id: Optional[str] = ...,
-                 client_secret: Optional[str] = ...,
-                 oauth_url: Optional[str] = ...,
-                 reddit_url: Optional[str] = ...,
-                 refresh_token: Optional[str] = ...,
-                 redirect_uri: Optional[str] = ...,
-                 password: Optional[str] = ...,
-                 user_agent: Optional[str] = ...,
-                 username: Optional[str] = ...,
-                 ) -> None: ...
+    def __init__(
+        self,
+        site_name: str,
+        client_id: Optional[str] = ...,
+        client_secret: Optional[str] = ...,
+        oauth_url: Optional[str] = ...,
+        reddit_url: Optional[str] = ...,
+        refresh_token: Optional[str] = ...,
+        redirect_uri: Optional[str] = ...,
+        password: Optional[str] = ...,
+        user_agent: Optional[str] = ...,
+        username: Optional[str] = ...,
+    ) -> None: ...

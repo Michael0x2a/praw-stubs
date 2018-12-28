@@ -17,4 +17,3 @@ if sys.version_info < (3, 0):
 else:
     import configparser as configparser
     from urllib.parse import urljoin as urljoin, urlparse as urlparse
-
