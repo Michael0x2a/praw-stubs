@@ -13,7 +13,7 @@ from .base import RedditBase
 from .mixins import ThingModerationMixin, UserContentMixin
 from .redditor import Redditor
 from .subreddit import Subreddit
-from typing import Any, Optional, List, Union
+from typing import Any, Optional, List, Union, Tuple
 
 class Submission(RedditBase, SubmissionListingMixin, UserContentMixin):
     STR_FIELD: str = ...

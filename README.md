@@ -48,7 +48,7 @@ Modules that need annotations:
 - [ ] `praw.models.listing.mixins.rising`
 - [x] `praw.models.listing.mixins.submission`
 - [ ] `praw.models.listing.mixins.subreddit`
-- [ ] `praw.models.reddit.__init__`
+- [x] `praw.models.reddit.__init__`
 - [x] `praw.models.reddit.base`
 - [x] `praw.models.reddit.comment`
 - [ ] `praw.models.reddit.emoji`
