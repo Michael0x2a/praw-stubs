@@ -2,7 +2,7 @@ from ...reddit import Reddit
 from ..base import PRAWBase
 from ..reddit.base import RedditBase
 from .listing import FlairListing
-from typing import Any, Optional, Iterator, TypeVar, Dict
+from typing import Any, Optional, Iterator, TypeVar, Dict, TYPE_CHECKING
 
 _T = TypeVar('_T', bound=RedditBase)
 

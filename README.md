@@ -50,7 +50,7 @@ Modules that need annotations:
 - [ ] `praw.models.listing.mixins.subreddit`
 - [ ] `praw.models.reddit.__init__`
 - [x] `praw.models.reddit.base`
-- [ ] `praw.models.reddit.comment`
+- [x] `praw.models.reddit.comment`
 - [ ] `praw.models.reddit.emoji`
 - [ ] `praw.models.reddit.live`
 - [ ] `praw.models.reddit.message`
@@ -73,7 +73,8 @@ Modules that need annotations:
 - [x] `praw.models.reddit.mixins.savable`
 - [x] `praw.models.reddit.mixins.votable`
 
-Things I need to consider adding back/double-checking in mypy:
+Potential extensions:
 
-- [ ] Using TypedDicts as arguments for `**kwargs`
+- Consider removing some of the duplicate signatures using whatever mechanism emerges
+  out of https://github.com/python/typing/issues/270, if that ever moves forward.
 
