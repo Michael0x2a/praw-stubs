@@ -57,7 +57,7 @@ Modules that need annotations:
 - [ ] `praw.models.reddit.modmail`
 - [ ] `praw.models.reddit.more`
 - [ ] `praw.models.reddit.multi`
-- [ ] `praw.models.reddit.redditor`
+- [ ] `praw.models.reddit.redditor` (partially done; RedditorStream is incomplete)
 - [ ] `praw.models.reddit.submission`
 - [ ] `praw.models.reddit.subreddit`
 - [ ] `praw.models.reddit.widgets`
