@@ -1,6 +1,10 @@
-from typing import List, Optional, Generic, TypeVar, Set, Any
+from typing import List, Optional, Generic, TypeVar, Set, Any, Callable, Iterator
+
+from .listing.generator import ListingGenerator
+from .reddit.base import RedditBase
 
 _T = TypeVar("_T")
+_TReddit = TypeVar('_TReddit', bound=RedditBase)
 
 class BoundedSet(Generic[_T]):
     max_items: int = ...
@@ -14,11 +18,13 @@ class ExponentialCounter:
     def reset(self) -> None: ...
 
 def permissions_string(
-    permissions: Optional[List[str]], known_permissions: Set[str]
+    permissions: Optional[List[str]],
+    known_permissions: Set[str],
 ) -> str: ...
+
 def stream_generator(
-    function: Any,
+    function: Callable[[], ListingGenerator[_TReddit]],
     pause_after: Optional[int] = ...,
     skip_existing: bool = ...,
     attribute_name: str = ...,
-) -> None: ...
+) -> Iterator[Optional[_TReddit]]: ...
