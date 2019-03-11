@@ -56,11 +56,15 @@ class Submission(RedditBase, SubmissionListingMixin, UserContentMixin):
 
     # Discovered attributes not mentioned directly in comments
     url: str = ...
-    # Note: both mod_reports and user_reports actually are list-of-lists.
+
+    # Note 1: Both mod_reports and user_reports actually are list-of-lists.
     # However, the inner list is more semantically closer to a tuple -- so we use that
     # so we can get more precise types.
-    mod_reports: List[Tuple[str, str]] = ...
-    user_reports: List[Tuple[str, int]] = ...
+    #
+    # Note 2: If the report reason is 'None', that means no report reason
+    # was selected.
+    mod_reports: List[Tuple[Optional[str], str]] = ...
+    user_reports: List[Tuple[Optional[str], int]] = ...
     def __init__(
         self,
         reddit: Reddit,
